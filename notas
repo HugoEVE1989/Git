@@ -93,6 +93,9 @@ git remote -v
 Para quitar el enlace al repositorio remoto
 git remote remove origin
 
+Para subir una rama al repo remoto
+git push origin nombreRama
+
 
 
 
