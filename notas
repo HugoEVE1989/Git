@@ -29,6 +29,10 @@ las tags anotadas son almacenadas como objetos completos dentro de la base de gi
 
 las tags ligeras es otra forma de crear tags pero contienen menos información
 
+Workflows (flujos de trabajo)
+flujos de trabajos de proyectos propios, en equipo o de terceros
+
+
 Comandos
 
 Consulta de la documentación de git
@@ -82,6 +86,9 @@ git checkout nombreRama
 Para eliminar una rama 
 git branch -D nombreRama
 
+Para mostrar las ramas ocultas
+git branch -a
+
 Para fusionar dos ramas con los cambios de cada rama
 1.- cambiar a la rama que va a absorver los cambios git chechout master
 2.- ejecutar comando para absorver la rama
@@ -132,4 +139,14 @@ git push origin versionDeTagCreado
 
 Para subir todos los tags creados al repo remoto
 git push origin --tags
+
+para bajar los cambios en el repositorio remoto a la rama origin/maester 
+git fetch origin
+
+Para hacer un merge de la rama origin master a nuestra rama master
+git merge origin/master
+
+Despues tendremos que subir los cambios al repo remoto con los cambios locales y los que se acaban de integrar
+
+Para hacer un clon de un repositorio de un tercero y crea un nuevo repositorio en nuestro perfil con ese proyecto se utiliza "Fork"
 
