@@ -22,6 +22,9 @@ son grupos de issues que se aplican para un proyecto, caracteristica o periodo d
 labels
 Etiquetas para organizar los diferentes problemas
 
+tags
+los tags (etiquetas) son puntos especificos en a historia de nuestros proyectos y se usan para marcar alguna versión 
+
 Comandos
 
 Consulta de la documentación de git
@@ -85,6 +88,7 @@ fast-forward.-  realiza la fusión sin preguntar nada por que los cambios entre 
 Manual merge.-  al realizaer la fusión de ramas git detecta que hay cambios en los mismos archivos en la misma linea de código y deja a decisión del integrador de cambios la decisión de seleccionar los cambios que van a persistir en este nuevo commit
 
 
+
 Repositorios remotos
 
 Para clonar un proyecto
@@ -105,7 +109,13 @@ git remote remove origin
 Para subir una rama al repo remoto
 git push origin nombreRama
 
+Para reescribir un mensaje de el ultimo commit con una descripción correcta
+git commit --amend -m "mensaje nuevo"
 
+Para subir este cambio de mensaje al repo remoto se utiliza el comando
+git push origin master -f 
+
+la opción -f es para forzar el envio del cambio al repo remoto, ya que git no detecta un commit nuevo por haber sido solo una actualización del mensaje del commit
 
 
 
