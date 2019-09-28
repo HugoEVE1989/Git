@@ -1,0 +1,82 @@
+working directory
+área de trabajo
+
+staging area
+aqui se seleccionan los archivos que ya estan listos
+
+Repository
+archivos que ya estan versionados
+
+Head 
+es el commit donde nos encontramos
+
+Ramas
+son una "linea de tiempo" en nuestro proyecto, la rama principal por defecto es la rama "Master"
+
+Comandos
+
+Consulta de la documentación de git
+git help
+
+para configuraciones globales
+
+git config --global [opciones]
+
+git config --global user.name "nombre de usuario"
+git config --global user.email "correo electronico"
+git config --global color.ui true 
+
+
+Para iniciar un proyecto ejecutar comando en el directorio del proyecto, comenzara a monitorear los cambios que se realicen
+git init 
+
+Para consultar el estatus del proyecto, nos indica los cambios y el estado de esos cambios
+git status
+
+Para seleccionar los archivos que ya estan listos para poder versionarlos
+git add . | git add nombreArchivo
+
+Para guardar los cambios de los archivos que se seleccionaron listos para versionarse
+git commit -m "mensaje de descripción de los cambios"
+
+Para listar los commits con la información del cambio
+git log
+
+Para regresar a una versión de codigo en especifica en un commit o para cambiar de rama
+git checkout idCommit
+git checkout nombreRama
+
+Para regresar al ultimo commit
+git checkout master
+
+Para regresar a una versión y eliminar el commit 
+git reset --soft idCommit -> elimina el commit pero no cambia el codigo en el directorio
+git reset --mixed
+git reset --hard  idCommit -> borra el registro de los commit y elimina el cambio del código, restaurando el código a la versión del idCommit que se especifico en el comando
+
+Para consultar las ramas del proyecto
+git branch
+
+Para crear una rama en nuestro proyecto
+git branch nombreRama
+
+Para cambiar entre ramas
+git checkout nombreRama
+
+Para eliminar una rama 
+git branch -D nombreRama
+
+Para fusionar dos ramas con los cambios de cada rama
+1.- cambiar a la rama que va a absorver los cambios git chechout master
+2.- ejecutar comando para absorver la rama
+git merge nombreRama
+
+Cuando se realiza una fusión de ramas podemos tener dos mensajes
+fast-forward.-  realiza la fusión sin preguntar nada por que los cambios entre las ramas se realizaron en archivos diferentes o en lineas diferentes del mismo archivo
+Manual merge.-  al realizaer la fusión de ramas git detecta que hay cambios en los mismos archivos en la misma linea de código y deja a decisión del integrador de cambios la decisión de seleccionar los cambios que van a persistir en este nuevo commit
+
+
+Repositorios remotos
+
+Para clonar un proyecto
+git clone
