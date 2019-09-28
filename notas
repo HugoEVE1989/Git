@@ -25,6 +25,10 @@ Etiquetas para organizar los diferentes problemas
 tags
 los tags (etiquetas) son puntos especificos en a historia de nuestros proyectos y se usan para marcar alguna versión 
 
+las tags anotadas son almacenadas como objetos completos dentro de la base de git y contiene mas información
+
+las tags ligeras es otra forma de crear tags pero contienen menos información
+
 Comandos
 
 Consulta de la documentación de git
@@ -117,6 +121,15 @@ git push origin master -f
 
 la opción -f es para forzar el envio del cambio al repo remoto, ya que git no detecta un commit nuevo por haber sido solo una actualización del mensaje del commit
 
+para crear un tag del ultimo commit
+git tag -a v0.8 -m "mensaje del tag"
 
+para crear un tag de un commit en especifico
+git tag -a v0.1 -m "mensaje de tag" idCommit
 
+Para subir los tags al repo remoto
+git push origin versionDeTagCreado
+
+Para subir todos los tags creados al repo remoto
+git push origin --tags
 
