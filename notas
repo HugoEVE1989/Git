@@ -13,6 +13,15 @@ es el commit donde nos encontramos
 Ramas
 son una "linea de tiempo" en nuestro proyecto, la rama principal por defecto es la rama "Master"
 
+issues
+son una forma de continuar, mejorar o solucionar un error en nuestros repositorios
+
+milestones
+son grupos de issues que se aplican para un proyecto, caracteristica o periodo de tiempo
+
+labels
+Etiquetas para organizar los diferentes problemas
+
 Comandos
 
 Consulta de la documentación de git
