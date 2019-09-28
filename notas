@@ -81,3 +81,18 @@ Repositorios remotos
 Para clonar un proyecto
 git clone
 
+Para conectar un repositorio remoto
+git remote add origin urlRepositorioRemoto
+
+Para enviar los cambios trabajados en el repositorio local al repo remoto
+git push -u origin master
+
+Para visualizar el repo remoto enlazado a mi repo local
+git remote -v
+
+Para quitar el enlace al repositorio remoto
+git remote remove origin
+
+
+
+
