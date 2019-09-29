@@ -150,3 +150,7 @@ Despues tendremos que subir los cambios al repo remoto con los cambios locales y
 
 Para hacer un clon de un repositorio de un tercero y crea un nuevo repositorio en nuestro perfil con ese proyecto se utiliza "Fork"
 
+Para generar archivo gitignore
+touch .gitignore
+El archivo gitignore sirve para especificar que archivos y/o extensiones de archivos no debe de considerar el motor de git para versionar, comunmente usado para no versionar los binarios que se descargan de los proyectos, logs, etc
+
